@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Face Emoji
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+          <h2 id="Heading" class="btn btn-warning" style="font-size: 30px;">
+            FINGER SIGN RECOGNITION APP
+            <br>
+            <span>&#128512</span>
+            <span>&#128513</span>
+            <span>&#128533</span>
+            <span>&#128546</span>
+            <span>&#128545</span>
+            <span>&#128548</span>
+          </h2>
+          <br>
+          <br>
+          <h3 style="color: #ffffff;"> Take your selfy to generate Emoji</h3>
+          
+          <h3 style="color: rgb(240, 252, 5); font-weight: bold;">Are you showing best?</h3>
+         
+          <h3 style="color: rgb(248, 3, 203); font-weight: bold;">Are you showing amazing?</h3>
+          
+          <h3 style="color: rgba(5, 252, 59, 0.742); font-weight: bold;">Are you showing victory?</h3>
+          <br>
+        </center>
+          <div id="take_camera">
+            <label class="btn btn-info">Webcam</label>
+            <br>
+            <br>
+            <div id="camera">
+
+            </div>
+            <br>
+            <button onclick="capture()" class="btn btn-danger" id="capture_me">Capture Image</button>
+          </div>
+          <div id="take_set">
+            <label class="btn btn-info">Captured View</label>
+            <br>
+            <br>
+            <div id="set">
+            </div>
+            <br>
+            <button onclick="check()" class="btn btn-danger" id="identifier">Identify Finger Sign</button>
+          </div>
+          <center>
+          <div id="middle">
+            <label id="prediction1" style="color: rgb(0, 255, 238);">Prediction1 -</label>
+            <br>
+            <label id="empty1" style="color: rgb(130, 249, 3);"></label>
+            <br>
+            <label id="p_empty1"></label> 
+
+            <br>
+            <br>
+            <label id="prediction2" style="color: rgb(0, 98, 255);">Prediction2 -</label>
+            <br>
+            <label id="empty2" style="color: rgb(249, 3, 3);"></label>
+            <br>
+            <label id="p_empty2"></label> 
+          </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(241, 3, 3); 
+    text-align: center;
+}
+#take_camera {
+   float:left ;
+   margin: 30px; 
+}
+#take_set { 
+    float:right ; 
+    margin: 30px;
+}
+#camera,#set {
+box-shadow: 10px 10px 30px rgb(79, 76, 76);
+width: 350px; 
+height: 350px;
+}
+#Heading{
+    letter-spacing: 10px;
+}
